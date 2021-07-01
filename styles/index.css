@@ -8,6 +8,10 @@
     color: theme("colors.white");
   }
 
+  #__next {
+    min-height: 100vh;
+  }
+
   p {
     line-height: 1.2;
   }

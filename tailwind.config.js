@@ -12,6 +12,7 @@ module.exports = {
       yellow: "#FFA630",
       white: colors.white,
       grey: colors.coolGray,
+      indigo: colors.indigo,
     },
   },
   variants: {
