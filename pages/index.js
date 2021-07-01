@@ -1,15 +1,15 @@
 import Head from "next/head";
 
-import { Maintenance } from "../components/Maintenance";
+import { Hero } from "../components/Hero";
 
 export default function Home() {
-	return (
-		<div>
-			<Head>
-				<title>Create Next App</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<Maintenance />
-		</div>
-	);
+  return (
+    <div className="container mx-auto">
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Hero />
+    </div>
+  );
 }

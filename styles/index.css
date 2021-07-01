@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme("colors.purple");
+    color: theme("colors.white");
+  }
+
+  p {
+    line-height: 1.2;
+  }
+}
