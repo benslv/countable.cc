@@ -9,10 +9,19 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       purple: "#1D1128",
-      yellow: "#FFA630",
-      white: colors.white,
+      yellow: {
+        DEFAULT: "#FFA630",
+        hover: "#EC8600",
+      },
       grey: colors.coolGray,
       indigo: colors.indigo,
+      black: colors.black,
+      white: colors.white,
+      indigo: colors.indigo,
+      red: colors.rose, 
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
     },
   },
   variants: {
