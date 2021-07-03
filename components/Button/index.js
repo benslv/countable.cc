@@ -3,9 +3,9 @@ import { styled } from "stitches.config";
 const Wrapper = styled("a", {
   display: "inline-block",
 
-  padding: "10px 25px",
+  padding: "12px 30px",
   backgroundColor: "$yellow",
-  borderRadius: "18px",
+  borderRadius: 18,
 
   fontFamily: "$sans",
   fontWeight: "$2",

@@ -10,5 +10,5 @@ export const Text = styled("p", {
   fontSize: "$1",
   fontWeight: "$1",
   lineHeight: 1.2,
-  letterSpacing: "0em",
+  letterSpacing: 0,
 });

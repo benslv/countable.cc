@@ -6,7 +6,7 @@ export const Heading = styled(Text, {
   fontWeight: "$2",
   lineHeight: 1,
   letterSpacing: "-0.04em",
-  marginBottom: "10px",
+  marginBottom: 10,
 
   variants: {
     size: {
