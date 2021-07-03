@@ -54,11 +54,11 @@ export const Example = () => {
       <ChannelName># counting</ChannelName>
       <Spacer size={25} />
       <CountWrapper>
-        <Count name="Ben" message="996" />
-        <Count name="Eemeli" message="997" />
-        <Count name="Ben" message="998" />
-        <Count name="Eemeli" message="998" />
-        <Count name="Countable" message="💥 Wrong number, @eemeli!" />
+        <Count name="Ben" img="/images/ben.png" message="996" />
+        <Count name="Eemeli" img="/images/eemeli.png" message="997" />
+        <Count name="Ben" img="/images/ben.png" message="998" />
+        <Count name="Eemeli" img="/images/eemeli.png" message="998" />
+        <Count name="Countable" img="/images/countable.png" message="💥 Wrong number, @eemeli!" />
       </CountWrapper>
     </Wrapper>
   );

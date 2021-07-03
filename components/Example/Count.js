@@ -21,10 +21,10 @@ const InnerWrapper = styled("div", {
   justifyContent: "center",
 });
 
-export const Count = ({ name, message }) => {
+export const Count = ({ name, message, img }) => {
   return (
     <Wrapper>
-      <Profile src="../../images/ben.svg" width={50} height={50} draggable="false" />
+      <Profile src={img} width={50} height={50} draggable="false" />
       <InnerWrapper>
         <Text css={{ fontSize: "$0" }}>{name}</Text>
         <Text>{message}</Text>
