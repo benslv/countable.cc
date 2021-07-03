@@ -29,7 +29,7 @@ const Wrapper = styled("div", {
 export const Hero = () => {
   return (
     <Wrapper>
-      <HeroContainer className="flex flex-col gap-y-6 max-w-xl">
+      <HeroContainer>
         <Heading as="h1" size="2">
           Countable
         </Heading>
@@ -39,11 +39,7 @@ export const Hero = () => {
         </Text>
         <Spacer axis="vertical" size={30} />
         <ButtonHolder>
-          <Button
-            link="https://invite.countable.cc"
-            className="bg-indigo-500 hover:bg-indigo-600"
-            color="discord"
-          >
+          <Button link="https://invite.countable.cc" color="discord">
             Invite Countable
           </Button>
           <Button link="https://www.buymeacoffee.com/benslv">Donate</Button>
