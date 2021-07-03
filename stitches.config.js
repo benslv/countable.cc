@@ -12,6 +12,7 @@ export const { styled, css, global, theme } = createCss({
       yellow: "#FFA630",
       yellowDark: "#EC8600",
       blurple: "#5769E9",
+      blurpleDark: "#4457E7",
       grey: "#808080",
     },
     fonts: {
@@ -25,6 +26,9 @@ export const { styled, css, global, theme } = createCss({
       1: "20px",
       2: "calc($1 * 1.5)",
       3: "calc($1 * 4)",
+    },
+    transitions: {
+      1: "0.2s ease",
     },
   },
 });

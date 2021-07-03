@@ -18,6 +18,7 @@ export const Hero = () => {
           <Button
             link="https://invite.countable.cc"
             className="bg-indigo-500 hover:bg-indigo-600"
+            color="discord"
           >
             Invite Countable
           </Button>
