@@ -11,7 +11,7 @@ export const Hero = () => {
           counting channel in your Discord server!
         </p>
         <div className="flex gap-x-4">
-          <Button link="https://invite.countable.cc" className="bg-indigo-500">
+          <Button link="https://invite.countable.cc" className="bg-indigo-500 hover:bg-indigo-600">
             Invite Countable
           </Button>
           <Button link="https://www.buymeacoffee.com/benslv">Donate</Button>
