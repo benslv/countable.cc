@@ -1,12 +1,46 @@
-export const Button = ({ link, children, className }) => {
+import { styled } from "stitches.config";
+
+const Wrapper = styled("a", {
+  display: "inline-block",
+
+  padding: "12px 30px",
+  backgroundColor: "$yellow",
+  borderRadius: 18,
+
+  fontFamily: "$sans",
+  fontWeight: "$2",
+  color: "$white",
+  textDecoration: "none",
+
+  boxShadow: "$white",
+
+  transition: "background-color $1",
+
+  "&:hover": {
+    backgroundColor: "$yellowDark",
+  },
+
+  variants: {
+    color: {
+      discord: {
+        backgroundColor: "$blurple",
+        "&:hover": {
+          backgroundColor: "$blurpleDark",
+        },
+      },
+    },
+  },
+});
+
+export const Button = ({ link, children, ...delegated }) => {
   return (
-    <a
+    <Wrapper
       href={link}
       target="_blank"
       rel="noopenner noreferrer"
-      className={`py-3 px-6 bg-yellow hover:bg-yellow-hover transition-colors rounded-2xl font-bold shadow-lg inline-block text-lg ${className}`}
+      {...delegated}
     >
       {children}
-    </a>
+    </Wrapper>
   );
 };

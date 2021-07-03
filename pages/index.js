@@ -1,15 +1,20 @@
 import Head from "next/head";
 
-import { Hero } from "../components/Hero";
+import { Hero } from "components/Hero";
+import { Navbar } from "components/Navbar";
+import { Container } from "components/Container";
 
 export default function Home() {
   return (
-    <div className="container mx-auto h-screen">
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
-    </div>
+      <Navbar />
+      <Container>
+        <Hero />
+      </Container>
+    </>
   );
 }
