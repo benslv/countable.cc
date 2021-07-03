@@ -22,7 +22,8 @@ const Wrapper = styled("div", {
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  justifyContent: "space-evenly",
+  justifyContent: "space-around",
+  height: "750px",
 });
 
 export const Hero = () => {

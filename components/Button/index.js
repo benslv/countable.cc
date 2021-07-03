@@ -12,8 +12,7 @@ const Wrapper = styled("a", {
   color: "$white",
   textDecoration: "none",
 
-  boxShadow:
-    "box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);",
+  boxShadow: "$white",
 
   transition: "background-color $1",
 

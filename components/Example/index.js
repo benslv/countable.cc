@@ -20,7 +20,7 @@ const Wrapper = styled("div", {
 
   overflow: "hidden",
 
-  boxShadow: "0 0 50px -25px rgba(255,255,255,1)",
+  boxShadow: "$white",
 
   position: "relative",
 

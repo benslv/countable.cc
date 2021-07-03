@@ -32,9 +32,9 @@ export const { styled, css, global, getCssString, theme } = createCss({
       1: "0.2s ease",
     },
     shadows: {
-      black: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);",
+      black: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
       white:
-        "0 0 10px -15px rgba(255,255,255,0.25), 0 0 10px -15px rgba(255,255,255,0.25);",
+        "0 0 75px -50px rgba(255,255,255,1), 0 0 5px rgba(255,255,255, 0.05)",
     },
   },
 });
