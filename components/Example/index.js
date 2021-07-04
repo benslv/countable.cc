@@ -6,6 +6,8 @@ import { Count } from "./Count";
 
 const Wrapper = styled("div", {
   display: "flex",
+  position: "relative",
+
   flexDirection: "column",
   justifyContent: "center",
 
@@ -13,16 +15,10 @@ const Wrapper = styled("div", {
 
   background: "linear-gradient(180deg, $purpleLighter 0%, $purpleDark 100%)",
 
-  minWidth: "max-content",
-  width: 400,
-
-  borderRadius: 25,
-
-  overflow: "hidden",
-
   boxShadow: "$white",
-
-  position: "relative",
+  
+  width: "100%",
+  borderRadius: 0,
 
   "&::after": {
     content: "",
@@ -34,6 +30,15 @@ const Wrapper = styled("div", {
     height: "100%",
     "background-image":
       "linear-gradient(to bottom, $purpleLighter 0, rgba(0,0,0,0) 100%)",
+  },
+
+
+  "@sm": {
+    overflow: "hidden",
+    
+    borderRadius: 25,
+    minWidth: "max-content",
+    width: 400,
   },
 });
 
@@ -58,7 +63,11 @@ export const Example = () => {
         <Count name="Eemeli" img="/images/eemeli.png" message="997" />
         <Count name="Ben" img="/images/ben.png" message="998" />
         <Count name="Eemeli" img="/images/eemeli.png" message="998" />
-        <Count name="Countable" img="/images/countable.png" message="💥 Wrong number, @eemeli!" />
+        <Count
+          name="Countable"
+          img="/images/countable.png"
+          message="💥 Wrong number, @eemeli!"
+        />
       </CountWrapper>
     </Wrapper>
   );

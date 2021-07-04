@@ -8,8 +8,12 @@ import { Spacer } from "components/Spacer";
 
 const ButtonHolder = styled("div", {
   display: "flex",
-  flexDirection: "row",
-  columnGap: 30,
+  flexDirection: "column",
+  gap: 30,
+
+  "@sm": {
+    flexDirection: "row",
+  },
 });
 
 const HeroContainer = styled("div", {
@@ -31,9 +35,9 @@ const Wrapper = styled("div", {
   alignItems: "center",
   justifyContent: "space-around",
   gap: 100,
-  height: 750,
 
   "@lg": {
+    height: 750,
     flexDirection: "row",
   },
 });

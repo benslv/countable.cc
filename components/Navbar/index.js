@@ -5,10 +5,14 @@ import { Heading } from "components/Heading";
 import { Link } from "components/Link";
 
 const Wrapper = styled("div", {
-  display: "flex",
-  alignItems: "center",
+  display: "none",
 
-  padding: "25px 100px",
+  "@sm": {
+    display: "flex",
+    alignItems: "center",
+
+    padding: "25px 100px",
+  },
 });
 
 const Nav = styled("nav", {
