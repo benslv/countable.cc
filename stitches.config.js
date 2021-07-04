@@ -37,4 +37,11 @@ export const { styled, css, global, getCssString, theme } = createCss({
         "0 0 75px -50px rgba(255,255,255,1), 0 0 5px rgba(255,255,255, 0.05)",
     },
   },
+  media: {
+    sm: "(min-width: 640px)",
+    md: "(min-width: 768px)",
+    lg: "(min-width: 1024px)",
+    xl: "(min-width: 1280px)",
+    "2xl": "(min-width: 1536px)",
+  },
 });

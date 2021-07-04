@@ -9,21 +9,33 @@ import { Spacer } from "components/Spacer";
 const ButtonHolder = styled("div", {
   display: "flex",
   flexDirection: "row",
-  gap: 30,
+  columnGap: 30,
 });
 
 const HeroContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
   maxWidth: 640,
+  alignItems: "center",
+  textAlign: "center",
+
+  "@lg": {
+    alignItems: "flex-start",
+    textAlign: "left",
+  },
 });
 
 const Wrapper = styled("div", {
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-around",
-  height: "750px",
+  gap: 100,
+  height: 750,
+
+  "@lg": {
+    flexDirection: "row",
+  },
 });
 
 export const Hero = () => {
