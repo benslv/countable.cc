@@ -27,6 +27,10 @@ const HeroContainer = styled("div", {
     alignItems: "flex-start",
     textAlign: "left",
   },
+
+  h1: {
+    fontSize: "clamp($2 * 2, 10vw, $3)",
+  },
 });
 
 const Wrapper = styled("div", {
