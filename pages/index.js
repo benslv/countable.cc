@@ -1,8 +1,9 @@
 import Head from "next/head";
 
 import { Hero } from "components/Hero";
-import { Navbar } from "components/Navbar";
+import { DesktopNavbar, MobileNavbar } from "components/Navbar";
 import { Container } from "components/Container";
+import { Spacer } from "components/Spacer";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <DesktopNavbar />
+      <MobileNavbar />
+      <Spacer size={40} />
       <Container>
         <Hero />
       </Container>
