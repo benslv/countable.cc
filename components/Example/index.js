@@ -16,9 +16,9 @@ const Wrapper = styled("div", {
   background: "linear-gradient(180deg, $purpleLighter 0%, $purpleDark 100%)",
 
   boxShadow: "$white",
-  
-  width: "100%",
-  borderRadius: 0,
+
+  borderRadius: 25,
+  overflow: "hidden",
 
   "&::after": {
     content: "",
@@ -32,11 +32,7 @@ const Wrapper = styled("div", {
       "linear-gradient(to bottom, $purpleLighter 0, rgba(0,0,0,0) 100%)",
   },
 
-
   "@sm": {
-    overflow: "hidden",
-    
-    borderRadius: 25,
     minWidth: "max-content",
     width: 400,
   },
@@ -45,6 +41,7 @@ const Wrapper = styled("div", {
 const CountWrapper = styled("div", {
   display: "flex",
   flexDirection: "column",
+  alignItems: "flex-start",
   rowGap: 20,
 });
 
