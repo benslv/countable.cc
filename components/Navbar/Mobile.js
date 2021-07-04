@@ -1,45 +1,54 @@
-import { BiMenu } from "react-icons/bi";
+import { useState } from "react";
+
+import Image from "next/image";
+import { HiMenu, HiX } from "react-icons/hi";
 import { styled } from "stitches.config";
 
-const Button = styled("button", {
-  position: "fixed",
-  bottom: 25,
-  right: 25,
-  border: 0,
+import { Link } from "components/Link";
+import { MobileMenu } from "./MobileMenu";
 
-  boxShadow: "$black",
-
+const Wrapper = styled("div", {
   display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "center",
+  justifyContent: "space-between",
 
-  padding: 15,
+  padding: "60px 40px",
+  paddingBottom: 0,
 
   "@sm": {
     display: "none",
   },
-
-  background: "$yellow",
-  transition: "$1",
-
-  "&:active, &:focus": {
-    background: "$yellowDark",
-  },
-
-  borderRadius: "50%",
-
-  "z-index": 5,
 });
 
-const ButtonIcon = styled(BiMenu, {
-  color: "$purple",
-  fontSize: 32,
+const Button = styled("button", {
+  background: "none",
+  border: 0,
+
+  cursor: "pointer",
+});
+
+const ButtonIcon = styled("svg", {
+  color: "$white",
+  fontSize: 48,
 });
 
 export const MobileNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <Button>
-      <ButtonIcon />
-    </Button>
+    <>
+      {isOpen && <MobileMenu />}
+      <Wrapper>
+        <Link href="#">
+          <Image src="/images/countable.png" width={48} height={48} alt="" />
+        </Link>
+        <Button onClick={() => toggleOpen()}>
+          {isOpen ? <ButtonIcon as={HiX} /> : <ButtonIcon as={HiMenu} />}
+        </Button>
+      </Wrapper>
+    </>
   );
 };
