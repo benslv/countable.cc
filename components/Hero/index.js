@@ -23,13 +23,17 @@ const HeroContainer = styled("div", {
   alignItems: "center",
   textAlign: "center",
 
+  h1: {
+    fontSize: "calc(2 * $2)",
+  },
+
   "@lg": {
     alignItems: "flex-start",
     textAlign: "left",
-  },
 
-  h1: {
-    fontSize: "clamp($2 * 2, 10vw, $3)",
+    h1: {
+      fontSize: "$3",
+    },
   },
 });
 
