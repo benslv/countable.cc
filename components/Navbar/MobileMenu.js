@@ -51,7 +51,7 @@ export const MobileMenu = () => {
       >
         support
       </NavLink>
-      <ThemeToggle>✨</ThemeToggle>
+      <ThemeToggle aria-label="Toggle dark/light mode">✨</ThemeToggle>
     </Nav>
   );
 };
