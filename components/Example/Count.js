@@ -25,7 +25,7 @@ const InnerWrapper = styled("div", {
 export const Count = ({ name, message, img }) => {
   return (
     <Wrapper>
-      <Profile src={img} width={50} height={50} draggable="false" />
+      <Profile src={img} width={50} height={50} draggable="false" alt="Example profile image" />
       <InnerWrapper>
         <Text css={{ fontSize: "$0" }}>{name}</Text>
         <Text>{message}</Text>
