@@ -35,7 +35,7 @@ const NavLink = styled(Link, {
 export const DesktopNavbar = () => {
   return (
     <Wrapper>
-      <Link href="#">
+      <Link href="#" aria-hidden="true">
         <Image src="/images/countable.png" width={50} height={50} alt="" />
       </Link>
       <Nav>
