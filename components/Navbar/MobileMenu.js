@@ -1,8 +1,9 @@
 import { styled } from "stitches.config";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { Link } from "components/Link";
 
-const Nav = styled("nav", {
+const Nav = styled(motion.nav, {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
@@ -31,27 +32,36 @@ const ThemeToggle = styled("button", {
   fontSize: "$2",
 });
 
-export const MobileMenu = () => {
+export const MobileMenu = ({ isOpen }) => {
   return (
-    <Nav>
-      <NavLink href="#" className="current">
-        home
-      </NavLink>
-      <NavLink
-        href="https://docs.countable.cc"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        documentation
-      </NavLink>
-      <NavLink
-        href="https://support.countable.cc"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        support
-      </NavLink>
-      <ThemeToggle aria-label="Toggle dark/light mode">✨</ThemeToggle>
-    </Nav>
+    <AnimatePresence>
+      {isOpen && (
+        <Nav
+          initial={{ y: -350 }}
+          animate={{ y: 0 }}
+          exit={{ y: -350 }}
+          transition={{ type: "spring", duration: 0.6 }}
+        >
+          <NavLink href="#" className="current">
+            home
+          </NavLink>
+          <NavLink
+            href="https://docs.countable.cc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            documentation
+          </NavLink>
+          <NavLink
+            href="https://support.countable.cc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            support
+          </NavLink>
+          <ThemeToggle aria-label="Toggle dark/light mode">✨</ThemeToggle>
+        </Nav>
+      )}
+    </AnimatePresence>
   );
 };

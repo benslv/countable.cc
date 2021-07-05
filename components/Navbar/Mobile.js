@@ -40,13 +40,17 @@ export const MobileNavbar = () => {
 
   return (
     <>
-      {isOpen && <MobileMenu />}
+      <MobileMenu isOpen={isOpen} />
       <Wrapper>
         <Link href="#">
           <Image src="/images/countable.png" width={48} height={48} alt="" />
         </Link>
         <Button onClick={() => toggleOpen()}>
-          {isOpen ? <ButtonIcon as={HiX}  aria-label="Close nav menu" /> : <ButtonIcon as={HiMenu} aria-label="Open nav menu" />}
+          {isOpen ? (
+            <ButtonIcon as={HiX} aria-label="Close nav menu" />
+          ) : (
+            <ButtonIcon as={HiMenu} aria-label="Open nav menu" />
+          )}
         </Button>
       </Wrapper>
     </>
