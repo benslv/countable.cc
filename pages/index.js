@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { AnimateSharedLayout, motion } from "framer-motion";
 
 import { Hero } from "components/Hero";
 import { DesktopNavbar, MobileNavbar } from "components/Navbar";
@@ -13,11 +14,15 @@ export default function Home() {
         <link rel="icon" href="/images/countable.png" />
       </Head>
       <DesktopNavbar />
-      <MobileNavbar />
-      <Spacer size={40} />
-      <Container>
-        <Hero />
-      </Container>
+      <AnimateSharedLayout>
+        <MobileNavbar />
+        <motion.div layout>
+          <Spacer size={40} />
+          <Container>
+            <Hero />
+          </Container>
+        </motion.div>
+      </AnimateSharedLayout>
     </>
   );
 }

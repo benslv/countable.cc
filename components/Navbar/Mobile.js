@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -7,7 +8,7 @@ import { styled } from "stitches.config";
 import { Link } from "components/Link";
 import { MobileMenu } from "./MobileMenu";
 
-const Wrapper = styled("div", {
+const Wrapper = styled(motion.div, {
   display: "flex",
   justifyContent: "space-between",
 
@@ -41,7 +42,7 @@ export const MobileNavbar = () => {
   return (
     <>
       <MobileMenu isOpen={isOpen} />
-      <Wrapper>
+      <Wrapper layout>
         <Link href="#">
           <Image src="/images/countable.png" width={48} height={48} alt="" />
         </Link>

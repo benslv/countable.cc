@@ -37,6 +37,7 @@ export const MobileMenu = ({ isOpen }) => {
     <AnimatePresence>
       {isOpen && (
         <Nav
+          layout
           initial={{ y: -350 }}
           animate={{ y: 0 }}
           exit={{ y: -350 }}
