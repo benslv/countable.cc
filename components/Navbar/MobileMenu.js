@@ -45,7 +45,7 @@ export const MobileMenu = () => {
         documentation
       </NavLink>
       <NavLink
-        href="https://support.countable.cc"
+        href="https://discord.countable.cc"
         target="_blank"
         rel="noopener noreferrer"
       >
